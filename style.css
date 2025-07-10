@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+/* font-family: "Raleway", sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+/* font-family: "Inter", sans-serif; */
+:root{
+    --primaryColor: #4E47FF;
+    --background: #F6F8FF;
+    --textPrimary: #252432;
+    --black: #000000;
+    --textSecondary: #757575;
+    --textTertiary: #B3B3B3;
+    --fontDefault: "Raleway", sans-serif;
+    --fontSecondary: "Inter", sans-serif;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    background: var(--background);
+    font-family: var(--fontDefault)
+}
+main {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+.header{
+    background-image: url(Assets/Hero-bg.png);
+    height: 698px;
+    margin-bottom: 116px;
+}
+nav {
+    padding: 50px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 200px 0 ;
+}
+.nav-title {
+    font-family: var(--fontSecondary);
+    font-size: 34px;
+    font-weight: 800;
+    color: var(--primaryColor);
+}
+
+/* shared style */
+.btn-primary {
+ padding: 12px 36px;
+ background-color: var(--primaryColor);
+ border-radius: 10px;
+ font-size: 16px;
+ border: none;
+ color: white;
+}
+.hero-area {
+    margin: 152px auto;
+    text-align: center;
+    max-width: 905px;
+}
+.hero-area h1{
+    margin-bottom: 37px;
+    font-size: 65px;
+    font-weight: 800;
+    /* width: 605px; */
+}
+
+/* Action Section */
+.action {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 116px;
+}
+.action-text-area {
+    max-width: 517px;
+}
+.action-text-area h3 {
+    font-size: 42px;
+    font-weight: 800;
+    margin-bottom: 23px;
+    color: var(--textPrimary);
+}
+.action-text-area p {
+    font-size: 24px;
+    margin-bottom: 23px;
+    color: var(--textTertiary);
+}
+.action-img {
+    border-radius: 48px;
+}
+/* Users Section */
+.users {
+    background: rgba(77, 71, 255, 0.10);
+    margin-bottom: 137px;
+    padding: 50px 142px;
+    border-radius: 24px;
+}
+.users h4 {
+    text-align: center;
+    font-size: 38px;
+    font-weight: 800;
+    color: var(--textPrimary);
+    margin-bottom: 40px;
+}
+.user-data-group {
+    display: flex;
+    justify-content: space-between;
+}
+.user-data-single{
+    text-align: center;
+}
+.user-data-title {
+    font-size: 80px;
+    font-weight: 800;
+    font-family: var(--fontSecondary);
+    color: var(--primaryColor);
+}
+.user-data-description {
+    font-family: var(--fontSecondary);
+    font-size: 20px;
+
+    color: rgba(0, 0, 0, 0.5);
+}
+/* Users Review Section*/
+.users-review {
+
+}
+.users-review-title {
+    text-align: center;
+    font-size: 42px;
+    font-weight: 800;
+    color: var(--textPrimary);
+    margin-bottom: 50px;
+}
+.users-grope-review {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+.personal-review {
+    background-color: white;
+    border-radius: 14px;
+    padding: 24px;
+}
+.stars {
+    display: flex;
+    margin-bottom: 24px;
+}
+.about-review {
+    margin-bottom: 24px;
+}
+.about-review h4 {
+    font-size: 24px;
+    margin-bottom: 8px;
+    color: var(--textPrimary);
+}
+.about-review p {
+    line-height: 22px;
+    color: var(--textPrimary);
+}
+.person-profile {
+    display: flex;
+}
+.person-profile img {
+    border-radius: 50%;
+    padding-right: 10px;
+}
+.person-profile-details {
+
+}

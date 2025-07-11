@@ -4,7 +4,7 @@
 /* font-family: "Inter", sans-serif; */
 :root{
     --primaryColor: #4E47FF;
-    --primaryColorHover: #2b26b3;
+    --primaryColorHover: #332dd4;
     --background: #F6F8FF;
     --textPrimary: #252432;
     --black: #000000;
@@ -58,7 +58,7 @@ nav {
  color: white;
  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.4);
  cursor: pointer;
- font-size: 15px;
+ font-size: 14px;
  font-family: var(--fontSecondary);
  letter-spacing: 1px;
  font-weight: 500;
@@ -102,13 +102,20 @@ nav {
     text-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
 }
 .action-text-area p {
-    font-size: 24px;
+    font-size: 20px;
     margin-bottom: 23px;
     color: var(--textTertiary);
 }
 .action-img {
+    cursor: pointer;
     border-radius: 48px;
     box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.4);
+    transition: 0.4s;
+    will-change: transform;
+}
+.action-img:hover {
+    transform: scale(1.01);
+    box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.6);
 }
 /* Users Section */
 .users {
@@ -129,7 +136,7 @@ nav {
     display: flex;
     justify-content: space-between;
 }
-.user-data-single{
+.user-data-single {
     text-align: center;
 }
 .user-data-title {
@@ -140,8 +147,7 @@ nav {
 }
 .user-data-description {
     font-family: var(--fontSecondary);
-    font-size: 18px;
-
+    font-size: 16px;
     color: rgba(0, 0, 0, 0.5);
 }
 /* Users Review Section*/
@@ -223,7 +229,15 @@ nav {
     margin: 20px auto;
 }
 .big-banner-img {
+    cursor: pointer;
     border-radius: 48px;
+    transition: 0.4s;
+    will-change: transform;
+    box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.5);
+}
+.big-banner-img:hover {
+    transform: scale(1.01);
+    /* box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.6); */
 }
 /* Contact Section */
 .contact {

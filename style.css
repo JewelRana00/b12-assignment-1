@@ -194,14 +194,17 @@ nav {
     align-items: center;
 }
 .person-profile img {
+    width: 30px;
+    height: 30px;
     border-radius: 50%;
-    padding-right: 10px;
+    margin-right: 10px;
 }
 .person-profile-details h5 {
     margin-bottom: 5px;
     color: var(--textSecondary);
 }
 .person-profile-details p {
+    font-size: 12px;
     color: var(--textTertiary);
 }
 
@@ -250,7 +253,7 @@ nav {
     /* box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); */
 }
 .contact h2 {
-    font-size: 45px;
+    font-size: 50px;
     width: 50%;
     text-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
 }

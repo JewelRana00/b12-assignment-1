@@ -20,7 +20,8 @@
 }
 body {
     background: var(--background);
-    font-family: var(--fontDefault)
+    font-family: var(--fontDefault);
+    
 }
 main {
     max-width: 1140px;
@@ -29,7 +30,7 @@ main {
 .header{
     background-image: url(Assets/Hero-bg.png);
     height: 698px;
-    margin-bottom: 116px;
+    margin-bottom: 115px;
 }
 nav {
     padding: 50px 0;
@@ -40,9 +41,11 @@ nav {
 }
 .nav-title {
     font-family: var(--fontSecondary);
-    font-size: 34px;
+    font-size: 50px;
     font-weight: 800;
+    letter-spacing: 3px;
     color: var(--primaryColor);
+    text-shadow: 0px 2px 5px rgba(0, 0, 0, 0.4);
 }
 
 /* shared style */
@@ -50,20 +53,23 @@ nav {
  padding: 12px 36px;
  background-color: var(--primaryColor);
  border-radius: 10px;
- font-size: 16px;
  border: none;
  color: white;
+ box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.4);
+ cursor: pointer;
 }
+
 .hero-area {
     margin: 152px auto;
     text-align: center;
     max-width: 905px;
 }
 .hero-area h1{
-    margin-bottom: 37px;
     font-size: 65px;
     font-weight: 800;
-    /* width: 605px; */
+    margin-bottom: 37px;
+    color: var(--textPrimary);
+    text-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 /* Action Section */
@@ -71,7 +77,7 @@ nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-bottom: 116px;
+    margin-bottom: 115px;
 }
 .action-text-area {
     max-width: 517px;
@@ -81,6 +87,7 @@ nav {
     font-weight: 800;
     margin-bottom: 23px;
     color: var(--textPrimary);
+    text-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
 }
 .action-text-area p {
     font-size: 24px;
@@ -89,6 +96,7 @@ nav {
 }
 .action-img {
     border-radius: 48px;
+    box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.4);
 }
 /* Users Section */
 .users {
@@ -99,10 +107,11 @@ nav {
 }
 .users h4 {
     text-align: center;
-    font-size: 38px;
+    font-size: 36px;
     font-weight: 800;
     color: var(--textPrimary);
     margin-bottom: 40px;
+    text-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
 }
 .user-data-group {
     display: flex;
@@ -112,27 +121,28 @@ nav {
     text-align: center;
 }
 .user-data-title {
-    font-size: 80px;
+    font-size: 70px;
     font-weight: 800;
     font-family: var(--fontSecondary);
     color: var(--primaryColor);
 }
 .user-data-description {
     font-family: var(--fontSecondary);
-    font-size: 20px;
+    font-size: 18px;
 
     color: rgba(0, 0, 0, 0.5);
 }
 /* Users Review Section*/
 .users-review {
-
+    margin-bottom: 137px;
 }
 .users-review-title {
     text-align: center;
-    font-size: 42px;
+    font-size: 38px;
     font-weight: 800;
     color: var(--textPrimary);
     margin-bottom: 50px;
+    text-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
 }
 .users-grope-review {
     display: flex;
@@ -143,6 +153,7 @@ nav {
     background-color: white;
     border-radius: 14px;
     padding: 24px;
+    border: 1px solid #F2EDED;
 }
 .stars {
     display: flex;
@@ -162,11 +173,119 @@ nav {
 }
 .person-profile {
     display: flex;
+    align-items: center;
 }
 .person-profile img {
     border-radius: 50%;
     padding-right: 10px;
 }
-.person-profile-details {
+.person-profile-details h5 {
+    margin-bottom: 5px;
+    color: var(--textSecondary);
+}
+.person-profile-details p {
+    color: var(--textTertiary);
+}
 
+/* Focus Section */
+.focus {
+    text-align: center;
+    background-color: white;
+    border-radius: 14px;
+    padding: 71px 150px;
+}
+.focus h2 {
+    font-size: 45px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: var(--textPrimary);
+    text-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+.focus p {
+    margin-bottom: 20px;
+    font-weight: 500;
+    color: var(--textSecondary);
+}
+.focus .btn-primary {
+    display: block;
+    margin: 20px auto;
+}
+.big-banner-img {
+    border-radius: 48px;
+}
+/* Contact Section */
+.contact {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 71px 0;
+    gap: 60px;
+    margin-bottom: 104px;
+    /* box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); */
+}
+.contact h2 {
+    font-size: 45px;
+    width: 50%;
+    text-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+.contact form {
+    width: 50%;
+}
+.contact input[type="email"],
+.contact input[type="text"],
+.contact textarea {
+    font-size: 14px;
+    margin-bottom: 20px;
+    display: block;
+    width: 100%;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    padding: 15px 15px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+.contact label {
+    display: block;
+    margin: 0 0 10px 0;
+    font-family: var(--fontSecondary);
+}
+.contact input[type="submit"] {
+    width: 100%;
+}
+.footer {
+    background: white;
+}
+ .footer-nav {
+    width: 531px;
+    /* height: 221px; */
+    margin: 0 auto ;
+    padding: 105px 0;
+    text-align: center;
+}
+ 
+.footer .footer-nav h2 {
+    font-family: var(--fontSecondary);
+    font-size: 80px;
+    font-weight: 900;
+    color: var(--primaryColor);
+    text-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+    margin-bottom: 8px;
+    letter-spacing: 5px;
+}
+.footer .footer-nav P {
+    font-weight: 500;
+    margin-bottom: 20px;
+    font-family: var(--fontSecondary);
+    color: var(--textTertiary);
+}
+.footer ul {
+    display: flex;
+    text-align: center;
+    list-style: none;
+    justify-content: space-around;
+}
+.footer ul li a {
+    text-decoration: none;
+    font-weight: 500;
+    color: var(--textTertiary);
 }

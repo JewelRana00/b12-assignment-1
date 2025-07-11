@@ -4,6 +4,7 @@
 /* font-family: "Inter", sans-serif; */
 :root{
     --primaryColor: #4E47FF;
+    --primaryColorHover: #2b26b3;
     --background: #F6F8FF;
     --textPrimary: #252432;
     --black: #000000;
@@ -50,13 +51,24 @@ nav {
 
 /* shared style */
 .btn-primary {
- padding: 12px 36px;
+ padding: 13px 36px;
  background-color: var(--primaryColor);
  border-radius: 10px;
  border: none;
  color: white;
  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.4);
  cursor: pointer;
+ font-size: 15px;
+ font-family: var(--fontSecondary);
+ letter-spacing: 1px;
+ font-weight: 500;
+ transition: 0.4s;
+ will-change: transform;
+}
+.btn-primary:hover {
+ background-color: var(--primaryColorHover);
+ transform: scale(1.025);
+ box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5);
 }
 
 .hero-area {
